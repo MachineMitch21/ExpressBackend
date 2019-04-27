@@ -1,0 +1,32 @@
+{
+  "name": "expressbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./dist/bundle.js",
+    "test": "mocha --require @babel/register ./test/**/*.spec.js",
+    "test-dev": "mocha --watch --require @babel/register ./test/**/*.spec.js",
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "lodash": "^4.17.11",
+    "mocha": "^6.1.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
