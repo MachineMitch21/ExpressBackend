@@ -14,6 +14,7 @@ const Database = function(url, options) {
 	}
 };
 
+
 Database.prototype.connect = function(options, connectionCb) {
 
 	let _options = Object.assign({
